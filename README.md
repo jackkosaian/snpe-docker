@@ -24,9 +24,9 @@ docker run -it --rm snpe
 ```
 
 ## Running the Docker container
-To enter the Docker container, run:
+To enter the Docker container, run (from the top level of this repository):
 ```bash
-docker run -it --rm snpe -v /path/on/host/to/snpe-docker:/home/snpe-docker
+docker run -it --rm -v $(pwd):/home/snpe-docker snpe
 ```
 
 ## Running the TF to SNPE example
